@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width" initial-scale=1.0>
+	<title>Encriptador</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+  <header class="header">
+    <img class="header__imagen" src=".\assets\alura.svg" alt="">
+  </header>
+  <main class="contenido">
+
+    <section class="contenido__texto__inicial">
+      <textarea id="textoParaConvertir" rows="8" cols="80" placeholder="Ingrese el texto aqui"></textarea>
+      <p class="contenido__texto__inicial__advertencia" id="advertencia"><img class="contenido__texto__inicial__advertencia_icono" id="advertencia_icono" src=".\assets\advertencia.png" alt="Icono advertencia">   Solo letras minusculas y sin acentos</p>
+      <div class="contenido__texto__inicial__botones">
+        <button class="contenido__texto__inicial__encriptar" id="botonEncriptar" onclick="encriptar();">Encriptar</button>
+        <button class="contenido__texto__inicial__desencriptar" id="botonDesencriptar" onclick="desencriptar();">Desencriptar</button>
+      </div>
+    </section>
+
+
+    <section class="contenido__texto__resultado">
+        <p id="salida"></p>
+        <!-- <textarea id="textoConvertido" rows="13" cols="30"></textarea> -->
+        <div class="contenido__texto__resultado__mensaje" id="advertenciaResultado">
+          <img class="contenido__texto__resultado__imagen" src=".\assets\imagen.png" alt="Imagen hombre buscando palabras">
+          <h1>Ningún mensaje fue encontrado</h1>
+          <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+        </div>
+        <button class="contenido__texto__resultado__copiar" id="botonCopiar" onclick="copiar();">Copiar</button>
+    </section>
+
+  </main>
+  <footer class="footer">
+    <p>Desarrollado por: Maira Alejandra Mora Enríquez</p>
+  </footer>
+	<script src="app.js"></script>
+  </body>
+</html>
